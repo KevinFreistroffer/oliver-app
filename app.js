@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './')));
 
 app.use('*', (req, res) => {
-	res.sendFile('./index.html');
+	res.sendFile(path.join(__dirname, './index.html');
 })
 
 // catch 404 and forward to error handler
