@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './')));
 
 app.use('*', (req, res) => {
-	res.sendFile(path.join(__dirname, './index.html');
+	res.sendFile(path.join(__dirname, './index.html'));
 })
 
 // catch 404 and forward to error handler
@@ -34,7 +34,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-app.set('PORT', process.env.PORT || 3000)
+app.set('PORT', process.env.PORT);
 app.listen(app.get('PORT'), () => {
 	console.log(`Listening on port: ${app.get('PORT')}`);
 });
